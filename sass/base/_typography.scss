@@ -1,0 +1,19 @@
+@use "../abstracts/" as *;
+
+.heading-container {
+    text-align: center;
+}
+
+.heading-primary {
+    display: inline-block;
+    font-size: 5.2rem;
+    text-align: center;
+    letter-spacing: .1rem;
+    // text-transform: uppercase;
+    margin-bottom: $margin-bottom-large;
+
+    background-image: linear-gradient(to right, rgba($heading-bg-dark , .9), rgba($heading-bg-light , .9));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}

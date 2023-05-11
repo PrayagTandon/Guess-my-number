@@ -1,0 +1,64 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Merriweather", serif;
+  line-height: 1;
+  font-size: 300;
+  background-color: #ea8267;
+  max-height: 100vh;
+}
+
+.heading-container {
+  text-align: center;
+}
+
+.heading-primary {
+  display: inline-block;
+  font-size: 5.2rem;
+  text-align: center;
+  letter-spacing: 0.1rem;
+  margin-bottom: 8rem;
+  background-image: linear-gradient(to right, rgba(198, 42, 2, 0.9), rgba(224, 68, 27, 0.9));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.game {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 1.6rem;
+}
+.game--description {
+  background-color: #f5dda8;
+  border-radius: 9px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  padding-block-start: 4rem;
+}
+.game--content {
+  background-color: #f3d89d;
+  border-radius: 9px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.main-container {
+  max-width: 130rem;
+  height: 85vh;
+  background-color: #fefae0;
+  border-radius: 11px;
+  margin: 6rem auto;
+}
+
+/*# sourceMappingURL=style.css.map */

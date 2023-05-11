@@ -1,0 +1,20 @@
+@use "../abstracts/" as *;
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $font-primary;
+    line-height: 1;
+    font-size: 300;
+    background-color: $color-body-background;
+    max-height: 100vh;
+}
