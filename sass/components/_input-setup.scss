@@ -1,0 +1,27 @@
+@use "../abstracts/" as *;
+@use "../base/" as *;
+
+.checkbox {
+    width: 65%;
+    margin: auto;
+    // background-color: #fff;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.guess {
+    display: inline-block;
+    padding: 1.6rem 2rem;
+    outline: none;
+    border: none;
+    width: 12rem;
+    height: 8rem;
+    border-radius: $border-radius-small;
+    font-size: 3.2rem;
+    font-family: $font-secondary;
+    text-align: center;
+    color: $color-text-description;
+    box-shadow: $box-shadow-light;
+}

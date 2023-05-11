@@ -3,8 +3,7 @@
 
 .btn {
 
-    &:link,
-    &:visited {
+    & {
         border: none;
         display: inline-block;
         background-image: linear-gradient(to right, rgba($color-secondary-dark , .8), rgba($color-secondary-light , .8));
@@ -17,6 +16,7 @@
         box-shadow: $box-shadow-light;
         transition: all .3s ease;
         margin-bottom: $margin-bottom-sm;
+        cursor: pointer;
     }
 
     &:hover {
@@ -27,5 +27,9 @@
     &:active {
         transform: translateY(-.2rem);
         box-shadow: $box-shadow-active;
+    }
+
+    &--check {
+        margin-bottom: 0;
     }
 }
