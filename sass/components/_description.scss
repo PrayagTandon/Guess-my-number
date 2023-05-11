@@ -1,2 +1,26 @@
 @use "../abstracts/" as *;
 @use "../base/" as *;
+
+.description--text {
+    width: 80%;
+    background-color: $color-white;
+    margin: auto;
+    padding: 1.2rem 2rem;
+    font-size: 1.8rem;
+    line-height: 1.6;
+    font-family: $font-secondary;
+    border-radius: $border-radius-small;
+    margin-bottom: $margin-bottom-md;
+    color: #1c2541;
+    box-shadow: $box-shadow-hover;
+}
+
+.text-span {
+    font-size: 2.2rem;
+    font-weight: 600;
+    display: inline-block;
+    background-image: linear-gradient(to right, rgba($heading-bg-dark , .9), rgba($heading-bg-light , .9));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
