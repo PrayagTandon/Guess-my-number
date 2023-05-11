@@ -7,12 +7,22 @@
 .heading-primary {
     display: inline-block;
     font-size: 5.2rem;
-    text-align: center;
     letter-spacing: .1rem;
     // text-transform: uppercase;
-    margin-bottom: $margin-bottom-large;
+    margin-bottom: $margin-bottom-lg;
 
     background-image: linear-gradient(to right, rgba($heading-bg-dark , .9), rgba($heading-bg-light , .9));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.heading-secondary {
+    display: inline-block;
+    font-size: 3.6rem;
+    margin-bottom: $margin-bottom-sm;
+
+    background-image: linear-gradient(to right, rgba($color-secondary-dark , .9), rgba($color-secondary-light , .9));
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;

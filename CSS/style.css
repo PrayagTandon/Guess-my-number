@@ -24,10 +24,19 @@ body {
 .heading-primary {
   display: inline-block;
   font-size: 5.2rem;
-  text-align: center;
   letter-spacing: 0.1rem;
   margin-bottom: 8rem;
   background-image: linear-gradient(to right, rgba(198, 42, 2, 0.9), rgba(224, 68, 27, 0.9));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.heading-secondary {
+  display: inline-block;
+  font-size: 3.6rem;
+  margin-bottom: 2.4rem;
+  background-image: linear-gradient(to right, rgba(218, 101, 80, 0.9), rgba(243, 126, 106, 0.9));
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
