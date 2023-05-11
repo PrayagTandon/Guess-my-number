@@ -1,0 +1,31 @@
+@use "../abstracts/" as *;
+@use "../base/" as *;
+
+.btn {
+
+    &:link,
+    &:visited {
+        border: none;
+        display: inline-block;
+        background-image: linear-gradient(to right, rgba($color-secondary-dark , .8), rgba($color-secondary-light , .8));
+        padding: 1.6rem 2rem;
+        text-decoration: none;
+        color: $color-white;
+        font-size: 2.2rem;
+        font-family: $font-secondary;
+        border-radius: $border-radius-small;
+        box-shadow: $box-shadow-light;
+        transition: all .3s ease;
+        margin-bottom: $margin-bottom-sm;
+    }
+
+    &:hover {
+        transform: translateY(-.6rem);
+        box-shadow: $box-shadow-hover;
+    }
+
+    &:active {
+        transform: translateY(-.2rem);
+        box-shadow: $box-shadow-active;
+    }
+}

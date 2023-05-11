@@ -20,7 +20,7 @@
 .heading-secondary {
     display: inline-block;
     font-size: 3.6rem;
-    margin-top: 2.4rem;
+    margin-top: 1.4rem;
     margin-bottom: $margin-bottom-sm;
 
     background-image: linear-gradient(to right, rgba($color-secondary-dark , .9), rgba($color-secondary-light , .9));
@@ -33,11 +33,11 @@
     &::before {
         content: "";
         width: 2px;
-        height: 8rem;
-        background-color: #000;
+        height: 6rem;
+        background-color: $color-text-light;
 
         position: absolute;
-        top: -9rem;
+        top: -7.5rem;
         left: 50%;
     }
 }

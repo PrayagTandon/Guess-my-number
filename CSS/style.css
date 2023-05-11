@@ -35,7 +35,7 @@ body {
 .heading-secondary {
   display: inline-block;
   font-size: 3.6rem;
-  margin-top: 2.4rem;
+  margin-top: 1.4rem;
   margin-bottom: 3rem;
   background-image: linear-gradient(to right, rgba(218, 101, 80, 0.9), rgba(243, 126, 106, 0.9));
   -webkit-background-clip: text;
@@ -46,11 +46,15 @@ body {
 .heading-secondary::before {
   content: "";
   width: 2px;
-  height: 8rem;
-  background-color: #000;
+  height: 6rem;
+  background-color: #777;
   position: absolute;
-  top: -9rem;
+  top: -7.5rem;
   left: 50%;
+}
+
+.description {
+  text-align: center;
 }
 
 .description--text {
@@ -77,6 +81,29 @@ body {
   color: transparent;
 }
 
+.btn:link, .btn:visited {
+  border: none;
+  display: inline-block;
+  background-image: linear-gradient(to right, rgba(218, 101, 80, 0.8), rgba(243, 126, 106, 0.8));
+  padding: 1.6rem 2rem;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 2.2rem;
+  font-family: "Nunito", sans-serif;
+  border-radius: 9px;
+  box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  margin-bottom: 3rem;
+}
+.btn:hover {
+  transform: translateY(-0.6rem);
+  box-shadow: 0px 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+.btn:active {
+  transform: translateY(-0.2rem);
+  box-shadow: 0px 0.5rem 1rem rgba(0, 0, 0, 0.2);
+}
+
 .game {
   height: 100%;
   display: grid;
@@ -99,7 +126,6 @@ body {
 
 .main-container {
   max-width: 130rem;
-  height: 85vh;
   background-color: #fefae0;
   border-radius: 11px;
   margin: 6rem auto;

@@ -1,6 +1,10 @@
 @use "../abstracts/" as *;
 @use "../base/" as *;
 
+.description {
+    text-align: center;
+}
+
 .description--text {
     width: 80%;
     background-color: $color-white;
@@ -11,7 +15,7 @@
     font-family: $font-secondary;
     border-radius: $border-radius-small;
     margin-bottom: $margin-bottom-md;
-    color: #1c2541;
+    color: $color-text-description;
     box-shadow: $box-shadow-hover;
 }
 
