@@ -205,9 +205,70 @@ body {
   font-weight: 700;
 }
 
+.footer {
+  padding: 1.6rem;
+  padding-top: 0rem;
+}
+
 .footer-nav {
   background-image: linear-gradient(to right, rgba(243, 216, 157, 0.9), rgba(245, 221, 168, 0.9));
   height: 15vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 11px;
+  gap: 4rem;
+  padding: 2rem;
+}
+
+.footer-description {
+  flex: 1;
+  padding-left: 10rem;
+  text-align: center;
+}
+
+.text-description {
+  font-size: 1.6rem;
+  line-height: 1.4;
+  margin-bottom: 0.8rem;
+  color: #1c2541;
+  font-weight: 600;
+  font-family: "Nunito", sans-serif;
+}
+
+.udemy-link:link, .udemy-link:visited {
+  display: inline-block;
+  text-decoration: none;
+  padding-bottom: 0.6rem;
+  border-bottom: 1px solid #c62a02;
+  background-image: linear-gradient(to right, rgba(198, 42, 2, 0.8), rgba(224, 68, 27, 0.8));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-size: 1.6rem;
+  font-weight: 400;
+  margin-top: 0.4rem;
+  transition: all 0.3s ease;
+}
+.udemy-link:hover, .udemy-link:active {
+  border: none;
+  transform: translateY(0.2rem);
+}
+
+.footer-links {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+.footer__link {
+  transition: all 0.3s ease;
+}
+.footer__link img {
+  width: 4rem;
+  height: 4rem;
+}
+.footer__link:hover {
+  transform: translateY(-0.2rem);
 }
 
 .game {
@@ -233,7 +294,7 @@ body {
 
 .main-container {
   max-width: 130rem;
-  background-color: #fefae0;
+  background-color: rgba(28, 37, 65, 0.3);
   border-radius: 11px;
   margin: 4rem auto;
 }
