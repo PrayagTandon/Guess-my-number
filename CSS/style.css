@@ -8,6 +8,16 @@ html {
   font-size: 62.5%;
   box-sizing: border-box;
 }
+@media (min-width: 100em) {
+  html {
+    font-size: 75%;
+  }
+}
+@media (max-width: 75em) {
+  html {
+    font-size: 50%;
+  }
+}
 
 body {
   font-family: "Merriweather", serif;
@@ -190,6 +200,12 @@ body {
   top: 50%;
   left: -7rem;
 }
+@media (max-width: 60em) {
+  .question-symbol::before {
+    width: 4rem;
+    left: -4.5rem;
+  }
+}
 .question-symbol:nth-child(3)::after {
   content: "";
   width: 6rem;
@@ -198,6 +214,12 @@ body {
   position: absolute;
   top: 50%;
   right: -7rem;
+}
+@media (max-width: 60em) {
+  .question-symbol:nth-child(3)::after {
+    width: 4rem;
+    right: -4.5rem;
+  }
 }
 .question-symbol span {
   color: #ffffff;

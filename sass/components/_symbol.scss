@@ -30,6 +30,11 @@
         position: absolute;
         top: 50%;
         left: -7rem;
+
+        @include respond-to('lg') {
+            width: 4rem;
+            left: -4.5rem;
+        }
     }
 
     &:nth-child(3) {
@@ -41,6 +46,11 @@
             position: absolute;
             top: 50%;
             right: -7rem;
+
+            @include respond-to('lg') {
+                width: 4rem;
+                right: -4.5rem;
+            }
         }
     }
 
