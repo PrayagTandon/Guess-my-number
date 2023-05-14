@@ -1,0 +1,7 @@
+@use "../abstracts/" as *;
+@use "../base/" as *;
+
+.footer-nav {
+    background-image: linear-gradient(to right, rgba($color-bg-dark, .9), rgba($color-bg-light , .9));
+    height: 15vh;
+}

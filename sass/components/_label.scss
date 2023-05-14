@@ -1,0 +1,21 @@
+@use "../abstracts/" as *;
+@use "../base/" as *;
+
+.label-container {
+    width: 80%;
+    margin: 0 auto;
+    // background-color: #fff;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.label {
+
+    &-score,
+    &-highscore {
+        font-size: 2.8rem;
+        color: $color-text-description;
+    }
+}
