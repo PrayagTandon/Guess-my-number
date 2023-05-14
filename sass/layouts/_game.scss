@@ -7,13 +7,22 @@
     grid-template-columns: 1fr 1fr;
     padding: 1.6rem;
 
+    @include respond-to('md-2') {
+        grid-template-columns: 1fr;
+    }
+
     &--description {
         background-color: $color-bg-light;
         border-radius: $border-radius-small;
         border-top-right-radius: 0;
         border-bottom-right-radius: 0;
-
         padding-block: 4rem;
+
+        @include respond-to('md-2') {
+            border-radius: $border-radius-small;
+            border-bottom-right-radius: 0;
+            border-bottom-left-radius: 0;
+        }
     }
 
     &--content {
@@ -22,5 +31,11 @@
         border-top-left-radius: 0;
         border-bottom-left-radius: 0;
         padding-block: 3.2rem;
+
+        @include respond-to('md-2') {
+            border-radius: $border-radius-small;
+            border-top-left-radius: 0;
+            border-top-right-radius: 0;
+        }
     }
 }

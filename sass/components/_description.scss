@@ -17,6 +17,14 @@
     margin-bottom: $margin-bottom-md;
     color: $color-text-description;
     box-shadow: $box-shadow-hover;
+
+    @include respond-to('md-1') {
+        width: 95%;
+    }
+
+    @include respond-to('sm') {
+        font-size: 1.6rem;
+    }
 }
 
 .text-span {

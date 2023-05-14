@@ -6,4 +6,8 @@
     background-color: rgba($color-text-description , .3);
     border-radius: $border-radius-large;
     margin: 4rem auto;
+
+    @include respond-to('md-1') {
+        margin: 0 auto;
+    }
 }

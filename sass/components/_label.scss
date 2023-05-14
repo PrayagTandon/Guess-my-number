@@ -9,6 +9,11 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+
+    @include respond-to('lg') {
+        flex-direction: column;
+        gap: 2.4rem;
+    }
 }
 
 .label {

@@ -17,6 +17,10 @@ html {
     @include respond-to('xl') {
         font-size: 50%;
     }
+
+    @include respond-to('sm') {
+        font-size: 43.75%;
+    }
 }
 
 body {

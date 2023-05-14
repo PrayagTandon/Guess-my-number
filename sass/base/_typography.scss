@@ -15,6 +15,15 @@
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
+
+    @include respond-to('lg') {
+        font-size: 4.4rem;
+    }
+
+    @include respond-to('sm') {
+        font-size: 3.8rem;
+        margin-bottom: 5rem;
+    }
 }
 
 .heading-secondary {
@@ -27,8 +36,12 @@
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
-
     position: relative;
+
+    @include respond-to('sm') {
+        font-size: 2.8rem;
+        margin-top: 1rem;
+    }
 
     &::before {
         content: "";
@@ -39,6 +52,11 @@
         position: absolute;
         top: -7.5rem;
         left: 50%;
+
+        @include respond-to('sm') {
+            height: 3.5rem;
+            top: -5rem;
+        }
     }
 
     &--content {
@@ -59,4 +77,8 @@
     font-size: 2.8rem;
     color: $color-text-description;
     margin-bottom: $margin-bottom-md;
+
+    @include respond-to('sm') {
+        font-size: 2.2rem;
+    }
 }

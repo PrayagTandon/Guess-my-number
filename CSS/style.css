@@ -18,6 +18,11 @@ html {
     font-size: 50%;
   }
 }
+@media (max-width: 24em) {
+  html {
+    font-size: 43.75%;
+  }
+}
 
 body {
   font-family: "Merriweather", serif;
@@ -41,6 +46,17 @@ body {
   background-clip: text;
   color: transparent;
 }
+@media (max-width: 60em) {
+  .heading-primary {
+    font-size: 4.4rem;
+  }
+}
+@media (max-width: 24em) {
+  .heading-primary {
+    font-size: 3.8rem;
+    margin-bottom: 5rem;
+  }
+}
 
 .heading-secondary {
   display: inline-block;
@@ -53,6 +69,12 @@ body {
   color: transparent;
   position: relative;
 }
+@media (max-width: 24em) {
+  .heading-secondary {
+    font-size: 2.8rem;
+    margin-top: 1rem;
+  }
+}
 .heading-secondary::before {
   content: "";
   width: 2px;
@@ -61,6 +83,12 @@ body {
   position: absolute;
   top: -7.5rem;
   left: 50%;
+}
+@media (max-width: 24em) {
+  .heading-secondary::before {
+    height: 3.5rem;
+    top: -5rem;
+  }
 }
 .heading-secondary--content {
   display: inline-block;
@@ -79,6 +107,11 @@ body {
   color: #1c2541;
   margin-bottom: 6rem;
 }
+@media (max-width: 24em) {
+  .heading-tertiary {
+    font-size: 2.2rem;
+  }
+}
 
 .description {
   text-align: center;
@@ -96,6 +129,16 @@ body {
   margin-bottom: 6rem;
   color: #1c2541;
   box-shadow: 0px 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+@media (max-width: 34em) {
+  .description--text {
+    width: 95%;
+  }
+}
+@media (max-width: 24em) {
+  .description--text {
+    font-size: 1.6rem;
+  }
 }
 
 .text-span {
@@ -143,6 +186,11 @@ body {
   justify-content: space-evenly;
   align-items: center;
 }
+@media (max-width: 24em) {
+  .checkbox {
+    width: 75%;
+  }
+}
 
 .guess {
   display: inline-block;
@@ -166,6 +214,12 @@ body {
   justify-content: space-around;
   align-items: center;
 }
+@media (max-width: 60em) {
+  .label-container {
+    flex-direction: column;
+    gap: 2.4rem;
+  }
+}
 
 .label-score, .label-highscore {
   font-size: 2.8rem;
@@ -178,6 +232,21 @@ body {
   width: 65%;
   margin: auto;
   margin-bottom: 6rem;
+}
+@media (max-width: 60em) {
+  .symbol-container {
+    width: 70%;
+  }
+}
+@media (max-width: 48em) {
+  .symbol-container {
+    width: 60%;
+  }
+}
+@media (max-width: 34em) {
+  .symbol-container {
+    width: 70%;
+  }
 }
 
 .question-symbol {
@@ -202,8 +271,7 @@ body {
 }
 @media (max-width: 60em) {
   .question-symbol::before {
-    width: 4rem;
-    left: -4.5rem;
+    visibility: hidden;
   }
 }
 .question-symbol:nth-child(3)::after {
@@ -217,8 +285,7 @@ body {
 }
 @media (max-width: 60em) {
   .question-symbol:nth-child(3)::after {
-    width: 4rem;
-    right: -4.5rem;
+    visibility: hidden;
   }
 }
 .question-symbol span {
@@ -234,7 +301,6 @@ body {
 
 .footer-nav {
   background-image: linear-gradient(to right, rgba(243, 216, 157, 0.9), rgba(245, 221, 168, 0.9));
-  height: 15vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -242,11 +308,21 @@ body {
   gap: 4rem;
   padding: 2rem;
 }
+@media (max-width: 34em) {
+  .footer-nav {
+    flex-direction: column;
+  }
+}
 
 .footer-description {
   flex: 1;
   padding-left: 10rem;
   text-align: center;
+}
+@media (max-width: 34em) {
+  .footer-description {
+    padding-left: 0rem;
+  }
 }
 
 .text-description {
@@ -271,6 +347,16 @@ body {
   font-weight: 400;
   margin-top: 0.4rem;
   transition: all 0.3s ease;
+}
+@media (max-width: 34em) {
+  .udemy-link:link, .udemy-link:visited {
+    font-size: 1.2rem;
+  }
+}
+@media (max-width: 24em) {
+  .udemy-link:link, .udemy-link:visited {
+    font-size: 1.4rem;
+  }
 }
 .udemy-link:hover, .udemy-link:active {
   border: none;
@@ -299,12 +385,24 @@ body {
   grid-template-columns: 1fr 1fr;
   padding: 1.6rem;
 }
+@media (max-width: 48em) {
+  .game {
+    grid-template-columns: 1fr;
+  }
+}
 .game--description {
   background-color: #f5dda8;
   border-radius: 9px;
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
   padding-block: 4rem;
+}
+@media (max-width: 48em) {
+  .game--description {
+    border-radius: 9px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+  }
 }
 .game--content {
   background-color: #f3d89d;
@@ -313,12 +411,24 @@ body {
   border-bottom-left-radius: 0;
   padding-block: 3.2rem;
 }
+@media (max-width: 48em) {
+  .game--content {
+    border-radius: 9px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+}
 
 .main-container {
   max-width: 130rem;
   background-color: rgba(28, 37, 65, 0.3);
   border-radius: 11px;
   margin: 4rem auto;
+}
+@media (max-width: 34em) {
+  .main-container {
+    margin: 0 auto;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
