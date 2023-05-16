@@ -1,81 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
 
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="CSS/style.css" />
+    <title>Guess my Number</title>
+  </head>
 
-  <link rel="stylesheet" href="CSS/style.css" />
-  <title>Guess my Number</title>
-</head>
-
-<body>
-  <div class="main-container">
-    <main class="game">
-      <section class="game--description">
-        <div class="heading-container">
-          <h1 class="heading-primary">Guess the Number!</h1>
-        </div>
-        <div class="description">
+  <body>
+    <div class="main-container">
+      <main class="game">
+        <section class="game--description">
           <div class="heading-container">
-            <h2 class="heading-secondary">How to play the game?</h2>
+            <h1 class="heading-primary">Guess the Number!</h1>
           </div>
-          <p class="description--text">
-            The game consists of trying to guess the hidden number between <span class="text-span">1 and 20 </span>
-            in the fewest possible attempts. To achieve this, it consists of <span class="text-span"> 20 attempts
-            </span>,
-            the less we spend, the higher our finalscore. You can always try again. Good luck! 🤟
-          </p>
-          <button type="button" class="btn btn--new">New Game</button>
-        </div>
-      </section>
-      <section class="game--content">
-        <div class="heading-container">
-          <h2 class="heading-secondary--content">Game on!!!!</h2>
-          <div class="symbol-container">
-            <div class="question-symbol"><span>?</span></div>
-            <div class="question-symbol"><span>?</span></div>
-            <div class="question-symbol"><span>?</span></div>
-          </div>
-          <h3 class="heading-tertiary">Start guessing...</h3>
-          <div class="checkbox">
-            <input type="number" id="input__guess" class="guess">
-            <button type="submit" class="btn btn--check">Check!</button>
-          </div>
-          <div class="label-container">
-            <p class="label-score">💯 Score: <span class="score">20</span></p>
-            <p class="label-highscore">
-              🥇 Highscore: <span class="highscore">0</span>
+          <div class="description">
+            <div class="heading-container">
+              <h2 class="heading-secondary">How to play the game?</h2>
+            </div>
+            <p class="description--text">
+              The game consists of trying to guess the hidden number between
+              <span class="text-span">1 and 20 </span> in the fewest possible
+              attempts. To achieve this, it consists of
+              <span class="text-span"> 20 attempts </span>, the less we spend,
+              the higher our finalscore. You can always try again. Good luck! 🤟
             </p>
+            <button type="button" class="btn btn--new">New Game</button>
           </div>
+        </section>
+        <section class="game--content">
+          <div class="heading-container">
+            <h2 class="heading-secondary--content">Game on!!!!</h2>
+            <div class="symbol-container">
+              <div class="question-symbol"><span>?</span></div>
+              <div class="question-symbol"><span>?</span></div>
+              <div class="question-symbol"><span>?</span></div>
+            </div>
+            <h3 class="heading-tertiary">Start guessing...</h3>
+            <div class="checkbox">
+              <input type="number" id="input__guess" class="guess" />
+              <button type="submit" class="btn btn--check">Check!</button>
+            </div>
+            <div class="label-container">
+              <p class="label-score">💯 Score: <span class="score">20</span></p>
+              <p class="label-highscore">
+                🥇 Highscore: <span class="highscore">0</span>
+              </p>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <div class="footer-nav">
+          <div class="footer-description">
+            <p class="text-description">
+              Made with 🧡 by <span class="text-span">Prayag Tandon</span>
+            </p>
+            <p class="text-description">
+              My version of the Guess my number! project from Jonas Schmedtmann
+              course:
+            </p>
+            <a
+              href="https://www.udemy.com/course/the-complete-javascript-course/"
+              target="_blank"
+              class="udemy-link"
+              >The Complete JavaScript Course: From Zero to Expert!</a
+            >
+          </div>
+          <nav class="footer-links">
+            <a
+              href="https://github.com/PrayagTandon"
+              target="_blank"
+              class="footer__link"
+            >
+              <img src="img/Github-logo.png" alt="Github-logo" />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/prayag-tandon/"
+              target="_blank"
+              class="footer__link"
+            >
+              <img src="img/LinkedIn logo.png" alt="LinkedIn-logo" />
+            </a>
+          </nav>
         </div>
-      </section>
-    </main>
-    <footer class="footer">
-      <div class="footer-nav">
-        <div class="footer-description">
-          <p class="text-description">Made with 🧡 by <span class="text-span">Prayag Tandon</span></p>
-          <p class="text-description">My version of the Guess my number! project from Jonas Schmedtmann course:</p>
-          <a href="https://www.udemy.com/course/the-complete-javascript-course/" target="_blank" class="udemy-link">The
-            Complete JavaScript Course: From Zero to Expert!</a>
-        </div>
-        <nav class="footer-links">
-          <a href="https://github.com/PrayagTandon" target="_blank" class="footer__link">
-            <img src="img/Github-logo.png" alt="Github-logo">
-          </a>
-          <a href="https://www.linkedin.com/in/prayag-tandon/" target="_blank" class="footer__link">
-            <img src="img/LinkedIn logo.png" alt="LinkedIn-logo">
-          </a>
-        </nav>
-      </div>
-    </footer>
-  </div>
-</body>
+      </footer>
+    </div>
 
+    <script src="JS/script.js"></script>
+  </body>
 </html>

@@ -2,7 +2,7 @@
   "name": "guess-my-number",
   "version": "1.0.0",
   "description": "A small project based on JS DOM",
-  "main": "JS/script.js",
+  "main": "JS/index.js",
   "scripts": {
     "watch:sass": "sass sass/main.scss css/style.css -w",
     "devserver": "live-server --browser=chrome",
