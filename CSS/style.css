@@ -32,6 +32,15 @@ body {
   max-height: 100vh;
 }
 
+h1::selection,
+h2::selection,
+h3::selection,
+p::selection,
+span::selection {
+  background-color: #ec8c74;
+  color: #1c2541;
+}
+
 .heading-container {
   text-align: center;
 }
