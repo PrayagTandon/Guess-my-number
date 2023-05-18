@@ -161,6 +161,7 @@ span::selection {
 }
 
 .btn {
+  cursor: pointer;
   border: none;
   display: inline-block;
   background-image: linear-gradient(to right, rgba(218, 101, 80, 0.8), rgba(243, 126, 106, 0.8));
@@ -173,7 +174,6 @@ span::selection {
   box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
   margin-bottom: 3rem;
-  cursor: pointer;
 }
 .btn:hover {
   transform: translateY(-0.6rem);
@@ -185,6 +185,13 @@ span::selection {
 }
 .btn--check {
   margin-bottom: 0;
+}
+
+.btn--invalid {
+  cursor: not-allowed;
+  background-image: linear-gradient(to right, rgba(218, 101, 80, 0.3), rgba(243, 126, 106, 0.3));
+  color: #1c2541;
+  transform: translateY(0rem);
 }
 
 .checkbox {

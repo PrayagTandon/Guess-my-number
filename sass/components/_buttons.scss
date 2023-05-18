@@ -2,8 +2,8 @@
 @use "../base/" as *;
 
 .btn {
-
     & {
+        cursor: pointer;
         border: none;
         display: inline-block;
         background-image: linear-gradient(to right, rgba($color-secondary-dark , .8), rgba($color-secondary-light , .8));
@@ -16,7 +16,6 @@
         box-shadow: $box-shadow-light;
         transition: all .3s ease;
         margin-bottom: $margin-bottom-sm;
-        cursor: pointer;
     }
 
     &:hover {
@@ -32,4 +31,11 @@
     &--check {
         margin-bottom: 0;
     }
+}
+
+.btn--invalid {
+    cursor: not-allowed;
+    background-image: linear-gradient(to right, rgba($color-secondary-dark , .3), rgba($color-secondary-light , .3));
+    color: $color-text-description;
+    transform: translateY(0rem);
 }
