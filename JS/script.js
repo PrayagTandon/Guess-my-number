@@ -40,6 +40,13 @@ checkBtn.addEventListener('click', function () {
                 document.querySelector('.heading-tertiary').textContent = '📈📈 Too high!!';
                 score--;
                 document.querySelector('.score').textContent = score;
+            } else {
+                document.querySelector('.heading-tertiary').textContent = '☹️☹️ You lost the game!!';
+                document.querySelector('.score').textContent = 0;
+                checkBtn.disabled = true;
+                checkBtn.classList.add('btn--invalid');
+                gameDescription.classList.add('game--lost');
+                gameContent.classList.add('game--lost');
             }
         }
 
@@ -48,6 +55,14 @@ checkBtn.addEventListener('click', function () {
                 document.querySelector('.heading-tertiary').textContent = '📉📉 Too Low!!';
                 score--;
                 document.querySelector('.score').textContent = score;
+            }
+            else {
+                document.querySelector('.heading-tertiary').textContent = '☹️☹️ You lost the game!!';
+                document.querySelector('.score').textContent = 0;
+                checkBtn.disabled = true;
+                checkBtn.classList.add('btn--invalid');
+                gameDescription.classList.add('game--lost');
+                gameContent.classList.add('game--lost');
             }
         }
     }
@@ -69,6 +84,8 @@ btnReset.addEventListener('click', function () {
     document.querySelector('.heading-tertiary').textContent = 'Start guessing...';
     gameDescription.classList.remove('game--won');
     gameContent.classList.remove('game--won');
+    gameDescription.classList.remove('game--lost');
+    gameContent.classList.remove('game--lost');
     checkBtn.disabled = false;
     checkBtn.classList.remove('btn--invalid');
     document.querySelector('.guess').value = '';

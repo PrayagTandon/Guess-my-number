@@ -439,6 +439,10 @@ span::selection {
   background-color: #7ed56f;
 }
 
+.game--lost {
+  background-color: rgba(230, 201, 193, 0.6);
+}
+
 .main-container {
   max-width: 130rem;
   background-color: rgba(28, 37, 65, 0.3);

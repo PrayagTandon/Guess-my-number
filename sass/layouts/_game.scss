@@ -43,3 +43,7 @@
 .game--won {
     background-color: #7ed56f;
 }
+
+.game--lost {
+    background-color: $color-game-lost;
+}
