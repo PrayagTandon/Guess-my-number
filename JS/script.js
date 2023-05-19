@@ -3,12 +3,40 @@
 // GENERATION OF A RANDOM NUMBER B/W 1 and 20...
 
 let secretNum = Math.floor(Math.random() * 20) + 1;
-console.log(secretNum);
 let score = 20;
 let highScore = 0;
 
 const gameDescription = document.querySelector('.game--description');
 const gameContent = document.querySelector('.game--content');
+
+// REUSABLE FUNCTIONS
+const displayMessage = function (message) {
+    document.querySelector('.heading-tertiary').textContent = message;
+    document.querySelector('.heading-tertiary').style.color = '#1c2541';
+}
+
+const symbolContainer = function (quesValue) {
+    const symbolQues = document.querySelectorAll('.symbol-span');
+    for (let i = 0; i < symbolQues.length; i++) {
+        symbolQues[i].textContent = quesValue;
+    }
+}
+
+const checkBtnBoolean = function (btnBooleanValue) {
+    checkBtn.disabled = btnBooleanValue;
+}
+
+const classListAdd = function (className) {
+    gameDescription.classList.add(className);
+    gameContent.classList.add(className);
+}
+
+const classListRemove = function (className) {
+    gameDescription.classList.remove(className);
+    gameContent.classList.remove(className);
+}
+
+// CHECK BTN EVENT LISTENER
 
 const checkBtn = document.querySelector('.btn--check');
 
@@ -18,80 +46,57 @@ checkBtn.addEventListener('click', function () {
     if (guessInput > 0 && guessInput <= 20) {
 
         if (guessInput === secretNum) {
-            document.querySelector('.heading-tertiary').textContent = '🎉🎉 Correct Number';
-            const symbolQues = document.querySelectorAll('.symbol-span');
-            for (let i = 0; i < symbolQues.length; i++) {
-                symbolQues[i].textContent = secretNum;
-            }
+            displayMessage('🎉🎉 Correct Number');
+            symbolContainer(secretNum);
             if (score > highScore) {
                 highScore = score;
                 document.querySelector('.highscore').textContent = highScore;
             }
-            checkBtn.disabled = true;
+            checkBtnBoolean(true);
             checkBtn.classList.add('btn--invalid');
 
-            gameDescription.classList.add('game--won');
-            gameContent.classList.add('game--won');
+            classListAdd('game--won');
 
         }
 
-        else if (guessInput > secretNum) {
+        else if (guessInput !== secretNum) {
             if (score > 1) {
-                document.querySelector('.heading-tertiary').textContent = '📈📈 Too high!!';
-                score--;
-                document.querySelector('.score').textContent = score;
-            } else {
-                document.querySelector('.heading-tertiary').textContent = '☹️☹️ You lost the game!!';
-                document.querySelector('.score').textContent = 0;
-                checkBtn.disabled = true;
-                checkBtn.classList.add('btn--invalid');
-                gameDescription.classList.add('game--lost');
-                gameContent.classList.add('game--lost');
-            }
-        }
-
-        else if (guessInput < secretNum) {
-            if (score > 1) {
-                document.querySelector('.heading-tertiary').textContent = '📉📉 Too Low!!';
+                guessInput > secretNum ? displayMessage('📈📈 Too high!!') : displayMessage('📉📉 Too Low!!');
                 score--;
                 document.querySelector('.score').textContent = score;
             }
             else {
-                document.querySelector('.heading-tertiary').textContent = '☹️☹️ You lost the game!!';
+                displayMessage('☹️☹️ You lost the game!!');
                 document.querySelector('.score').textContent = 0;
-                checkBtn.disabled = true;
+                checkBtnBoolean(true);
                 checkBtn.classList.add('btn--invalid');
-                gameDescription.classList.add('game--lost');
-                gameContent.classList.add('game--lost');
+                classListAdd('game--lost');
             }
         }
     }
     else if (guessInput <= 0 || guessInput > 20) {
-        const redHeading = document.querySelector('.heading-tertiary');
-        redHeading.textContent = '⛔⛔ Not a valid number';
-        redHeading.style.color = '#c62a02';
+        document.querySelector('.heading-tertiary').textContent = '⛔⛔ Not a valid number!!'
+        document.querySelector('.heading-tertiary').style.color = '#e0441b';
     }
 })
+
+
+// RESET BTN EVENT LISTENER
 
 const btnReset = document.querySelector('.btn--new');
 
 btnReset.addEventListener('click', function () {
 
     secretNum = Math.floor(Math.random() * 20) + 1;
-    console.log(secretNum);
     score = 20;
     document.querySelector('.score').textContent = score;
-    document.querySelector('.heading-tertiary').textContent = 'Start guessing...';
-    gameDescription.classList.remove('game--won');
-    gameContent.classList.remove('game--won');
-    gameDescription.classList.remove('game--lost');
-    gameContent.classList.remove('game--lost');
-    checkBtn.disabled = false;
+    displayMessage('Start guessing...');
+    document.querySelector('.heading-tertiary').style.color = '#1c2541';
+    classListRemove('game--won');
+    classListRemove('game--lost');
+    checkBtnBoolean(false);
     checkBtn.classList.remove('btn--invalid');
     document.querySelector('.guess').value = '';
 
-    const symbolQues = document.querySelectorAll('.symbol-span');
-    for (let i = 0; i < symbolQues.length; i++) {
-        symbolQues[i].textContent = '?';
-    }
+    symbolContainer('?');
 })
