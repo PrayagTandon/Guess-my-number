@@ -435,6 +435,10 @@ span::selection {
   }
 }
 
+.game--won {
+  background-color: #7ed56f;
+}
+
 .main-container {
   max-width: 130rem;
   background-color: rgba(28, 37, 65, 0.3);
