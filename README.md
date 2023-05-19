@@ -16,18 +16,12 @@
 
 ## Project Overwiew:
 
-- Designing and Building a landing page for Natours website using HTML, SCSS, JavaScript and NodeJS.
+- Build a simple JS DOM game using HTML, SCSS, JavaScript and NodeJS.
 - Made use of SassyCSS(SCSS) and strutured the layout using modern CSS grid and Flexbox.
 - **No CSS Framework**.
 - Made use of BEM notation to name the classes.
 - Used SCSS 7 in 1 architecture to style the different elemnets of the layout that helps to make them easily manageable and maintainable.
-- Designed the layout using designing tools such as Figma.
 - Deplyoed using Netlify.
-
-### Designing the Website:
-
-- The company focuses on providing the best adventure for a group. So, the overall personality of the website need to be more consumer focused and easy to navigate.
-- Different elements for the website:
 
 #### Selecting the different design elements and sketching a basic layout.
 
@@ -36,7 +30,8 @@
 2. Typography:
    > Source:[Google Fonts](https://fonts.google.com/)
 
-- Lato -> Family: sans-serif , Font-weight used : 100,300,400,700,900.
+- Merriweather -> Family: serif , Font-weight used : 300,400,700.
+- Nunito -> Family: sans-serif , Font-weight used : 400,500,600,700.
 
 3. Colors: Source : [OpenColors](https://yeun.github.io/open-color/) , [Coolors](https://coolors.co/palettes/trending)
 
