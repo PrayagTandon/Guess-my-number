@@ -31,7 +31,7 @@
 
 #### Selecting the different design elements and sketching a basic layout.
 
-1. Design Inspiration: Source: [Jonas Schmedtmann - CSS course Udemy](https://www.udemy.com/course/advanced-css-and-sass/)
+1. Design Inspiration: Source: [Jonas Schmedtmann - JavaScript course Udemy](https://www.udemy.com/course/the-complete-javascript-course/)
 
 2. Typography:
    > Source:[Google Fonts](https://fonts.google.com/)
